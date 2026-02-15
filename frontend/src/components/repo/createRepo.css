@@ -1,0 +1,125 @@
+/* PAGE BASE */
+.createrepo-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 1rem; /* navbar space */
+  font-family: "Inter", sans-serif;
+  color: #e0e0e0;
+}
+
+/* BACKGROUND */
+.createrepo-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #020611, #07132a, #0a1f3d, #000000);
+  background-size: 100% 100%;
+  animation: gradientShift 15s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* WRAPPER — FULL WIDTH */
+.createrepo-wrapper {
+  position: relative;
+  z-index: 2;
+      
+  margin: 4rem auto;
+  padding: 0 2rem;          
+}
+
+
+/* MAIN CARD — WIDE + DARK + LEFT ALIGNED */
+.createrepo-card {   
+  width: 70rem !important;  
+  height: auto !important;
+  background:  #041330;
+  padding: 3rem 4rem;            
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  text-align: left;
+
+  margin-left: auto;
+  margin-right: auto;            
+}
+
+
+/* TITLE */
+.createrepo-card h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* LABELS */
+.createrepo-card label {
+  font-size: 1.1rem;
+  color: #dbe5ff;
+  font-weight: 500;
+}
+
+/* INPUTS */
+.createrepo-card input,
+.createrepo-card textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+}
+
+.createrepo-card input::placeholder,
+.createrepo-card textarea::placeholder {
+  color: #a4b2d6;
+}
+
+.createrepo-card textarea {
+  resize: none;
+}
+
+.createrepo-card input:focus,
+.createrepo-card textarea:focus {
+  background: rgba(255, 255, 255, 0.12); /* keep or slightly brighten */
+  border: 1px solid whitesmoke;             /* optional highlight border */
+  outline: none;                         /* remove default outline */
+}
+
+/* SUBMIT BUTTON */
+.createrepo-card button {
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.createrepo-card button:hover {
+  background: white;
+  transform: translateY(-2px);
+}

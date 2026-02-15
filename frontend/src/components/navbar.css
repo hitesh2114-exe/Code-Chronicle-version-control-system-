@@ -1,0 +1,80 @@
+/* 🧭 Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(10, 10, 20, 0.5);
+  backdrop-filter: blur(12px);
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 0 2rem;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🪐 Left Section (Logo) */
+.nav-left .nav-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(150, 100, 255, 0.6);
+}
+
+/* 🚀 Center Links */
+.nav-center {
+  display: flex;
+  gap: 2rem;
+  margin-left: 37%;
+}
+
+.nav-center a {
+  color: #ddd;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  margin-top: 0.3rem;
+}
+
+.nav-center a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* 🌌 Right Section (Search + Profile) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-profile {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: border 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-profile:hover {
+  border-color: #fff;
+  transform: scale(1.05);
+}
+
+.input-box {
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.1rem 0.1rem 0.6rem;
+  font-size: small;
+  height: 2.2rem;
+  margin-bottom: 0.1rem;
+ 
+}
+
+.search-icon {
+  color: whitesmoke;
+}

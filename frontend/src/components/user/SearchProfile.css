@@ -1,0 +1,120 @@
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+   background: linear-gradient(
+    135deg, #020611, #07132a, #0a1f3d, #000000
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* SEARCH BAR SAME (already wide) */
+.search-bar {
+  position: fixed;
+  top: 90px;
+  width: 98%;
+  max-width: 1200px;
+  z-index: 80;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 18px;
+  border-radius: 14px;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.20);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #0a0f1a;
+  font-weight: 500;
+}
+
+/* CARDS LENGTH MATCHES SEARCH BAR */
+.cards-container {
+  margin-top: 190px;
+  width: 98%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+/* MAIN CARD */
+.profile-card {
+background-color: #041330;
+  width: 100%;
+  padding: 18px 22px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* CONTENT WRAPPER */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4px 6px;
+}
+
+/* LEFT SIDE */
+.card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.card-email {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.8;
+  color: #dbe4ff;
+  margin: 0;
+}
+
+/* RIGHT SIDE */
+.card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 260px;
+  text-align: right;
+}
+
+/* ROW */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.07);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ccd7ff;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.no-user {
+  font-size: 17px;
+  opacity: 0.7;
+  color: rgba(255,255,255,0.7);
+}

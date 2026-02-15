@@ -1,0 +1,101 @@
+
+body {
+    background: linear-gradient(to bottom,
+  #540863, #FF7F50
+);
+}
+
+
+input.form-control {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  color: white !important;
+  caret-color: white !important;
+}
+
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="email"] {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active {
+  background-color: transparent;
+  
+}
+
+input[type="email"]:focus,
+input[type="email"]:active {
+  background-color: transparent;
+  
+}
+
+input[type="password"]:focus,
+input[type="password"]:active {
+  background-color: transparent;
+  
+}
+input::placeholder {
+    color: white !important;
+}
+
+
+.heading {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+
+.down-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem 0 1rem;
+    padding-top: 1rem;
+    /* background-color: red; */
+    
+}
+
+.up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 3rem 0 1.5rem;
+    margin-bottom: 3rem;
+    /* background-color: blue; */
+    /* padding-right: 5rem; */
+}
+
+.logo-box {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.outside {
+    border: aliceblue 2px solid;
+    padding: 0 5rem;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container {
+  width: 59%;
+  padding-top: 7rem;
+}
