@@ -12,7 +12,7 @@ function SearchRepository() {
   useEffect(() => {
     const fetchAllRepositories = async () => {
       try {
-        const response = await axios.get("https://codechronicle.duckdns.org/repo/all");
+        const response = await axios.get("https://code-chronicle-backend.onrender.com/repo/all");
         setRepositories(response.data || []);
       } catch (err) {
         console.error("Failed to fetch suggested repositories:", err);

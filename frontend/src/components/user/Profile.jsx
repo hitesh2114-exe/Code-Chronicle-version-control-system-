@@ -14,7 +14,7 @@ function Profile() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://codechronicle.duckdns.org/userProfile/${userId}`
+          `https://code-chronicle-backend.onrender.com/userProfile/${userId}`
         );
         setUserProfile(response.data);
       } catch (err) {

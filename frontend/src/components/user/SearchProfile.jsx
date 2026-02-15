@@ -12,7 +12,7 @@ function SearchProfile() {
   useEffect(() => {
     const allProfile = async () => {
       try {
-        const response = await axios.get("https://codechronicle.duckdns.org/allUsers");
+        const response = await axios.get("https://code-chronicle-backend.onrender.com/allUsers");
         setUsersProfile(response.data);
         setSearchResult(response.data);
       } catch (err) {

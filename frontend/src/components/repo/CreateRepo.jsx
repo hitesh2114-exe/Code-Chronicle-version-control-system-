@@ -14,14 +14,14 @@ function CreateRepo() {
   const handleCreate = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://codechronicle.duckdns.org/repo/create", {
+      const response = await axios.post("https://code-chronicle-backend.onrender.com/repo/create", {
         owner: userId,
         name,
         description,
         content,
       });
 
-      await axios.put(`https://codechronicle.duckdns.org/addNewRepo/${userId}`, {
+      await axios.put(`https://code-chronicle-backend.onrender.com/addNewRepo/${userId}`, {
         repoId: response.data.repositoryID,
       });
 

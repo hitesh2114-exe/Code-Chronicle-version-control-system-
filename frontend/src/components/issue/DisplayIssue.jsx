@@ -15,7 +15,7 @@ function DisplayIssue() {
   useEffect(() => {
     const fetchIssue = async () => {
       try {
-        const response = await axios.get(`https://codechronicle.duckdns.org/issue/${id}`);
+        const response = await axios.get(`https://code-chronicle-backend.onrender.com/issue/${id}`);
         setIssue(response.data.issue);
       } catch (err) {
         console.error("Error fetching issue", err);
@@ -28,9 +28,9 @@ function DisplayIssue() {
   const handletoggle = async () => {
     try {
       const response = await axios.post(
-        `https://codechronicle.duckdns.org/issue/togglestatus/${id}`
+        `https://code-chronicle-backend.onrender.com/issue/togglestatus/${id}`
       );
-      const refreshed = await axios.get(`https://codechronicle.duckdns.org/issue/${id}`);
+      const refreshed = await axios.get(`https://code-chronicle-backend.onrender.com/issue/${id}`);
       setIssue(refreshed.data.issue);
     } catch (err) {
       console.log("error occured during calling handle toggle", err);
@@ -39,9 +39,9 @@ function DisplayIssue() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://codechronicle.duckdns.org/issue/delete/${id}`);
+      await axios.delete(`https://code-chronicle-backend.onrender.com/issue/delete/${id}`);
       await axios.put(
-        `https://codechronicle.duckdns.org/repo/deleteIssueFromRepo/${issue.repository._id}`,
+        `https://code-chronicle-backend.onrender.com/repo/deleteIssueFromRepo/${issue.repository._id}`,
         { issueId: id }
       );
       navigate(`/repo/${issue.repository._id}`);

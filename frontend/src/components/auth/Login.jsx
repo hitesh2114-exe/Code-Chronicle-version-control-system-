@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post("https://codechronicle.duckdns.org/login", {
+      const res = await axios.post("https://code-chronicle-backend.onrender.com/login", {
         email: email + "@gmail.com",
         password: password,
       });

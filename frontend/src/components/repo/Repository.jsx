@@ -19,7 +19,7 @@ function Repository() {
     // console.log(id);
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://codechronicle.duckdns.org/repo/id/${id}`);
+        const response = await axios.get(`https://code-chronicle-backend.onrender.com/repo/id/${id}`);
         console.log(response.data);
         setRepository(response.data);
       } catch (err) {
@@ -37,12 +37,12 @@ function Repository() {
   const handleDelete = async () => {
     try {
       const response = await axios.delete(
-        `https://codechronicle.duckdns.org/repo/delete/${id}`
+        `https://code-chronicle-backend.onrender.com/repo/delete/${id}`
       );
       console.log(response);
 
       await axios.put(
-        `https://codechronicle.duckdns.org/deleteRepoIdFromProfile/${userId}`,
+        `https://code-chronicle-backend.onrender.com/deleteRepoIdFromProfile/${userId}`,
         {
           repoId: id,
         }

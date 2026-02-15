@@ -14,11 +14,11 @@ function Issues() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        `https://codechronicle.duckdns.org/issue/create/${repoId.id}`,
+        `https://code-chronicle-backend.onrender.com/issue/create/${repoId.id}`,
         { title, description }
       );
 
-      await axios.put(`https://codechronicle.duckdns.org/repo/addIssueId/${repoId.id}`, {
+      await axios.put(`https://code-chronicle-backend.onrender.com/repo/addIssueId/${repoId.id}`, {
         issueId: response.data._id,
       });
 

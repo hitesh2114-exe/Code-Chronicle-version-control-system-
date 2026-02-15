@@ -13,7 +13,7 @@ function RepoOwner() {
     const fetchInfo = async () => {
       try {
         const response = await axios.get(
-          `https://codechronicle.duckdns.org/userProfile/${id}`
+          `https://code-chronicle-backend.onrender.com/userProfile/${id}`
         );
         setUserProfile(response.data);
       } catch (err) {

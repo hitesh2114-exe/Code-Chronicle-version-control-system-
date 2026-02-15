@@ -15,7 +15,7 @@ function DeleteProfile() {
     try {
       localStorage.removeItem("token");
       localStorage.removeItem("userId");
-      axios.delete(`https://codechronicle.duckdns.org/deleteProfile/${userId}`);
+      axios.delete(`https://code-chronicle-backend.onrender.com/deleteProfile/${userId}`);
       window.location.href = "/login";
     } catch (err) {
       console.error("error occured during deleteing profile");
